@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Test Suite" thread-count="6" parallel="methods" configfailurepolicy="continue">
+  <test name="Edge Pro OTA Test">
+    <classes> 
+           <class name="com.epqaautomation.testcases.TraceMessagesTest">
+                  <methods>
+
+                    <include name="setProperties" />
+			        <include name="verifysetPropertiesMsgIsDelivered" />
+			        <include name="verifysetPropertiesMO" />
+                    
+                    <include name="getMessages" />
+                    <include name="verifygetMessagesMsgIsDelivered" />
+                    <include name="verifygetMessagesMO" />
+                    
+                    <include name="sendReport" />
+                    <include name="verifysendReportMsgIsDelivered" />
+                    <include name="verifysendReportMO" />
+                   
+                    <include name="getPosition" />
+                    <include name="verifygetPositionMsgIsDelivered" />
+                    <include name="verifygetPositionMO" />
+                             
+                    <include name="readTemperature" />
+                    <include name="verifyreadTemperatureMsgIsDelivered" />
+                    <include name="verifyreadTemperatureMO" />
+                    
+                    <include name="updatePassword" />
+                    <include name="verifyupdatePasswordMsgIsDelivered" />
+                    <include name="verifyupdatePasswordMO" /> 
+                    
+                    <include name="readAcceleration" />
+                    <include name="verifyreadAccelerationMsgIsDelivered" />
+                    <include name="verifyreadAccelerationMO" />
+                    
+                    <include name="readPin" />
+                    <include name="verifyreadPinMsgIsDelivered" />
+                    <include name="verifyreadPinMO" />
+                    
+                    <include name="getProperties" />
+                    <include name="verifygetPropertiesMsgIsDelivered" />
+                    <include name="verifygetPropertiesMO" />
+                    
+                    <include name="getMessage" />
+                    <include name="verifygetMessageMsgIsDelivered" />
+                    <include name="verifygetMessageMO" />
+                
+                    <include name="getDeviceInfo" />
+                    <include name="verifygetDeviceInfoMsgIsDelivered" />
+                    <include name="verifygetDeviceInfoMO" />
+                    
+                    <include name="getLastKnownPosition" />
+                    <include name="verifygetLastKnownPositionMsgIsDelivered" />
+                    <include name="verifygetLastKnownPositionMO" />
+                    
+                    <include name="getDeviceStatus" />
+                    <include name="verifydeviceStatusMsgIsDelivered" />
+                    <include name="verifygetDeviceStatusMO" />
+                    
+                    <include name="resetOdometer" />
+                    <include name="verifyresetOdometerMsgIsDelivered" />
+                    <include name="verifyresetOdometerMO" />
+
+                    <include name="createCircle" />
+                    <include name="verifycreateCircleMsgIsDelivered" />
+                    <include name="verifycreateCircleMO" />
+
+                    <include name="createRectangle" />
+                    <include name="verifycreateRectangleMsgIsDelivered" />
+                    <include name="verifycreateRectangleMO" />
+                    
+                    <include name="createPolygon" />
+                    <include name="verifycreatePolygonMsgIsDelivered" />
+                    <include name="verifycreatePolygonMO" />               
+
+                    <include name="getGeofenceStatusByNumber" />
+                    <include name="verifygetGeofenceStatusByNumberMsgIsDelivered" />
+                    <include name="verifygetGeofenceStatusByNumberMO" />
+                    
+                    <include name="disableGeofence" />
+                    <include name="verifydisableGeofenceMsgIsDelivered" />
+                    <include name="verifydisableGeofenceMO" />
+                    
+                    <include name="enableGeofence" />
+                    <include name="verifyenableGeofenceMsgIsDelivered" />
+                    <include name="verifyenableGeofenceMO" />
+                    
+                    <include name="getGeofenceInfoByNumber" />
+                    <include name="verifygetGeofenceInfoByNumberMsgIsDelivered" />
+                    <include name="verifygetGeofenceInfoByNumberMO" />
+                    
+                    <include name="updateGeofenceName" />
+                    <include name="verifyupdateGeofenceNameMsgIsDelivered" />
+                    <include name="verifyupdateGeofenceNameMO" />
+                    
+                    <include name="getGeofenceStatusList" />
+                    <include name="verifygetGeofenceStatusListMsgIsDelivered" />
+                    <include name="verifygetGeofenceStatusListMO" />
+                    
+                    <include name="updateNotifyCondition" />
+                    <include name="verifyupdateNotifyConditionMsgIsDelivered" />
+                    <include name="verifyupdateNotifyConditionMO" />
+
+                    <include name="deleteGeoFence" />
+                    <include name="verifydeleteGeoFenceMsgIsDelivered" />
+                    <include name="verifydeleteGeoFenceMO" />
+
+                    <include name="getDeviceHealth" />
+                    <include name="verifygetDeviceHealthMsgIsDelivered" />
+                    <include name="verifygetDeviceHealthMO" />
+                    
+                    <include name="syncTime" />
+                    <include name="verifysyncTimeMsgIsDelivered" />
+                    <include name="verifysyncTimeMO" />
+
+                  </methods>
+      </class>
+      <!-- 
+      <class name="com.epqaautomation.testcases.DeviceTypesTest"/>
+      <class name="com.epqaautomation.testcases.CustomersTest"/>
+      <class name="com.epqaautomation.testcases.GroupTest"/>
+      <class name="com.epqaautomation.pages.BaseClass"/>
+
+            
+      <class name="com.epqaautomation.testcases.LoginTest"/>
+      <class name="com.epqaautomation.testcases.DevicesTest"/>
+      <class name="com.epqaautomation.testcases.ViewMessagesTest"/>
+      <class name="com.epqaautomation.testcases.UsersTest"/>
+      -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
